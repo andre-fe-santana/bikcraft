@@ -42,6 +42,7 @@ Estilização do Header
     list-style: none; /* Remove os pontos da lista  */
     display: flex;
     gap: 25px; /* Espaçamento entre Elementos (só funciona pra flex)*/
+    padding: 0; /* algum padrão de 40px de navegador */
 }
 
 .menu a {
@@ -138,3 +139,39 @@ Estilização do Rodapé
     width: 100%; /* 100% de largura */
     box-sizing: border-box;
 }
+
+/*
+=====================
+Responsividade
+=====================
+*/
+
+/* CELULAR E TABLET */
+@media(width <= 768px){
+    .conteudo {
+        grid-template-columns: 1fr; /* uma coluna por linha */
+    }
+
+    .introducao {
+        display: grid;
+        align-content: center; /* content pq não tem div  */
+        justify-self: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .botao {
+        justify-self: center;
+        padding: 20px 40px;
+    }
+
+    .subtitulo {
+        text-align: center;
+    }
+
+    .vantagens {
+        font-size: 16px;
+    }
+}
+
+
