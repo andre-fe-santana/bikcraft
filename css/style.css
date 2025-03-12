@@ -1,0 +1,110 @@
+/*
+=====================
+Estilização Global
+=====================
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0; /* config pra responsividade */
+    display: grid;
+    gap: 60px;
+    justify-items: center; /* items são para itens (divs), content é pra container*/
+    margin-top: 60px;
+}
+
+p {
+    font-size: 20px; /* Formatada todos os parágrafos */
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%; /* Tamanho máximo dependendo do elemento pai dela, evitando overflow (barra de rolagem lateral)*/
+}
+
+/*
+=====================
+Estilização do Header
+=====================
+*/
+
+.menu{
+    list-style: none; /* Remove os pontos da lista  */
+    display: flex;
+    gap: 25px; /* Espaçamento entre Elementos (só funciona pra flex)*/
+}
+
+.menu a {
+    background-color: #f2f2f2;
+    padding: 15px 30px; /* vertical e horizontal */
+    border-radius: 4px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.menu a:hover{
+    background-color: #ca1e0f;
+    color: #fff;
+}
+
+/*
+=====================
+Estilização do Conteúdo
+=====================
+*/
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    max-width: 1000px;
+    align-self: center;
+}
+
+.introducao {
+    background-color: #f1f1f1;
+    padding: 40px;
+    text-align: end;
+    display: grid;
+    align-content: center; /* content pq não tem div  */
+    justify-self: end;
+    gap: 20px;
+}
+
+.botao{
+    background-color: #ca1e0f;
+    color: white;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    justify-self: end;
+}
+
+.botao:hover {
+    transition: 0.3s;
+    background-color: black;
+}
+
+.subtitulo{
+    font-size: 64px;
+    text-transform: uppercase;
+    padding: 40px;
+    color: rgba(0, 0, 0, 0.2);
+    text-align: end;
+    align-self: center;
+}
+
+.vantagens {
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.rodape {
+    background-color: lightgray;
+    text-align: center;
+    padding: 10px;
+    width: 100%; /* 100% de largura */
+}
