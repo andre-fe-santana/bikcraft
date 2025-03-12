@@ -24,6 +24,12 @@ a {
 
 img {
     max-width: 100%; /* Tamanho máximo dependendo do elemento pai dela, evitando overflow (barra de rolagem lateral)*/
+    display: block; /* imagem se comporta como um bloco do inicio ao fim do container */
+
+}
+
+p, h1, h2, h3 {
+    margin: 0px;
 }
 
 /*
@@ -97,14 +103,38 @@ Estilização do Conteúdo
     align-self: center;
 }
 
+/*
+=====================
+Estilização das Vantagens
+=====================
+*/
+
 .vantagens {
-    text-align: center;
     background-color: #f1f1f1;
+    padding: 40px;
 }
 
+.vantagens-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+    padding: 20px;
+}
+
+.vantagens-item p{
+    grid-column: 2;
+}
+
+/*
+=====================
+Estilização do Rodapé
+=====================
+*/
+
 .rodape {
+    padding: 20px 0;
     background-color: lightgray;
     text-align: center;
-    padding: 10px;
     width: 100%; /* 100% de largura */
+    box-sizing: border-box;
 }
